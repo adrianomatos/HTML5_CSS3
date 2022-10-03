@@ -1,0 +1,17 @@
+body{
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1{
+    color: red;
+}
+
+h2{
+    color: blue;
+}
+
+p{
+    color: rebeccapurple;
+}
