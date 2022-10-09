@@ -5,80 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reprograme-se</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Criação de Sites com HTML5 e CSS3</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">Sobre</a></li>
-                <li><a href="/contact">Contato</a></li>
-            </ul>
-        </nav>
-        <hgroup>
-            Home |
-            Serviços |
-            Contato |
+    <h1>HTML e CSS</h1><hr>
+    <h2 id="textos">Textos</h2> <!--COMENTÁRIOS HTML-->
+    <p><b>Lorem ipsum</b> <i>adipisicing elit</i>. <u>Soluta, in!</u> <s>Dolor sit amet consectetur</s></p>
+    <p><big>Lorem ipsum dolor</big>, <small>sit amet consectetur adipisicing elit</small>. <del>Natus facilis atque dignissimos</del>.</p>
+    <p><em>Natus facilis atque dignissimos</em></p>
 
-            nav ????
-        </hgroup>
-    </header>
+    <h2 id="listas">Listas</h2>
+    <ol type="I" start="4" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <ul>
+        <li>Adriano</li>
+        <li>Rebeca</li>
+        <li>Juninho</li>
+    </ul>
 
-    <main>
-        <section>
-            <aside>Destinado a conteúdos que não fazem parte do fluxo do texto, mas que, ainda sim, estão relacionados
-                de alguma forma</aside>
+    <h2>Citações</h2>
+    <blockquote cite="google.com"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit</q>. Ipsum animi odio nemo iste architecto, velit necessitatibus.</blockquote>
 
-            <aside>Destinado a conteúdos que não fazem parte do fluxo do texto, mas que, ainda sim, estão relacionados
-                de alguma forma</aside>
-        </section>
+    <h2>Links</h2>
+    <a href="#textos" title="Link dentro da página" target="">Link interno</a>
+    <a href="#listas"><img src="img/banana.gif" title="Link interno na banana" width="80" alt="Link interno na imagem banana"></a>
 
-        <section>
-            <h1>Título</h1>
-            <figure>
-                <img src="img/LARVA.jpg" alt="">
-                <figcaption>Larva linda</figcaption>
-            </figure>
-            <a href="Artigo.html">Artigos</a>
-            <hr>
-        </section>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dl>HiperText Markup Language</dl>
+        <dt>CSS</dt>
+        <dl>Cascating Style Sheets</dl>
+    </dl>
 
-        <section>
-            <article>
-                <h2>Título da Sessão</h2>
-                <figure>
-                    <img src="img/Love-Livro.png" alt="">
-                    <figcaption>Imagem dessa sessão</figcaption>
-                </figure>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore impedit rem maiores
-                    repudiandae
-                    minima esse dolorum reiciendis, quam recusandae nostrum placeat, suscipit eius, quaerat molestiae
-                    architecto
-                    unde odio!</p>
-            </article>
+    <h2>Código</h2>
+    <code>
+    <pre>
+        class OlaMundo{
+            public static void main(String args[]){
+                System.out.println("Olá Mundo");
+            }
+        }
+    </pre>
+    </code>
 
-            <article>
-                <h2>Título da Sessão</h2>
-                <figure>
-                    <img src="img/Love-Livro.png" alt="">
-                    <figcaption>Imagem dessa sessão</figcaption>
-                </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur quas doloremque quod
-                    aliquam
-                    quasi obcaecati odit aperiam quia aliquid ab accusantium iure sed consectetur veritatis expedita
-                    dolorum
-                    ullam ipsam neque illo, ut vero earum?</p>
-            </article>
-        </section>
-    </main>
+    <h2>Imagens</h2>
+    <img src="img/moon.png" title="Lua" alt="Figura Lua" width="50">
+    <img src="img/sun.png" title="Sol" alt="Figura Sol" width="50">
+    <img src="img/world.png" title="Terra" alt="Figura Terra" width="50">
+    <img src="img/mapa_brasil_100X100_regioes_2.webp" alt="Map BR" width="50"><br>
+    
+    <h2>Formas com bordas mapeadas</h2>
+    <img src="img/formas.png" alt="Formas" usemap="#formas"><br>
+    <map name="formas">
+        <!--centro x/y e raio-->
+        <area shape="circle" coords="71,74,68" href="circulo.html" alt="Círculo">
+        <!--canto inferior esquerdo e superior direito-->
+        <area shape="rect" coords="177,139,314,2" href="quadrado.html" alt="Quadrado">
+        <area shape="rect" coords="352,114,526,28" href="retangulo.html" alt="Retangulo">
+        <!--Lados e vértices com no mínimo 3 coordenadas-->
+        <area shape="poly" coords="567,132,627,10,688,132" href="poligono.html" alt="Poligono">
+    </map>
 
-    <hr>
-    <footer>
-        <small>Copyright Adriano Matos &copy; Todos os direitos reservados</small>
-    </footer>
+    <h3>Mapeamento de imagem usando: https://www.image-map.net/</h3>
+    <img src="https://www.mapasmundi.com.br/blog/wp-content/uploads/2015/07/mapa_brasil_100X100_regioes_2.png" usemap="#brasil">
+    
+    <map name="brasil">
+        <area target="" alt="Ceará" title="Ceará" href="ce.html"
+            coords="751,213,741,206,726,192,705,177,692,169,672,171,667,180,670,189,672,199,671,210,675,219,677,234,678,244,685,253,680,261,688,264,698,264,710,273,720,271,719,255,723,239,732,234,741,217"
+            shape="poly">
+    </map>
+
 </body>
 
 </html>
